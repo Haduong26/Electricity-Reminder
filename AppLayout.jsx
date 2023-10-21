@@ -5,6 +5,7 @@ import Home from './components/Home';
 import User from './components/User';
 import { FontAwesome } from '@expo/vector-icons';
 import Devices from './components/Devices';
+import Header from './components/Header';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
