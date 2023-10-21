@@ -11,24 +11,10 @@ function Home({ navigation }) {
 
       <View style={styles.utilityContainer}>
         <View>
-          <Text>Energy</Text>
-        </View>
-        <View>
-          <TouchableOpacity onPress={() => navigation.navigate('Stats')}>
-            <Text>Bills</Text>
-          </TouchableOpacity>
-        </View>
-        <View>
           <TouchableOpacity onPress={() => navigation.navigate('Devices')}>
             <Text>Devices</Text>
           </TouchableOpacity>
         </View>
-      </View>
-
-      <View>
-        <TouchableOpacity onPress={() => navigation.navigate('Stats')}>
-          <Text>Electricity Advisor</Text>
-        </TouchableOpacity>
       </View>
     </View>
   )

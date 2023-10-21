@@ -2,11 +2,8 @@ import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Home from './components/Home';
-import Header from './components/Header';
-import Stats from './components/Stats';
-import Bills from './components/Bills';
 import User from './components/User';
-import { FontAwesome, AntDesign, FontAwesome5 } from '@expo/vector-icons';
+import { FontAwesome } from '@expo/vector-icons';
 import Devices from './components/Devices';
 
 const Stack = createNativeStackNavigator();
@@ -16,8 +13,6 @@ const iconSize = 24;
 
 const navigatorRoutes = [
     { name: "Home", component: Home, icon: <FontAwesome name='home' size={iconSize} /> },
-    { name: "Stats", component: Stats, icon: <AntDesign name='piechart' size={iconSize} /> },
-    { name: "Bills", component: Bills, icon: <FontAwesome5 name='money-check-alt' size={iconSize} /> },
     { name: "User", component: User, icon: <FontAwesome name='user' size={iconSize} /> },
 ]
 
