@@ -54,7 +54,8 @@ function TabNavigator() {
                         name={item.name}
                         component={item.component}
                         options={{
-                            tabBarButton: () => { }
+                            tabBarButton: () => { },
+                            headerShown: false,
                         }}
                     />
                 )
